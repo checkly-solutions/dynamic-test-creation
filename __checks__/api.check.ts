@@ -1,5 +1,5 @@
-import { ApiCheck, AssertionBuilder } from 'checkly/constructs'
-import { emailChannel } from './alert.check'
+import { ApiCheck, AssertionBuilder } from 'checkly/constructs';
+import { emailChannel } from './alert.check';
 
 new ApiCheck('books-api-check-1', {
   name: 'Books API',
@@ -18,4 +18,4 @@ new ApiCheck('books-api-check-1', {
     ],
   },
   runParallel: true,
-})
+});
