@@ -5,6 +5,7 @@ new ApiCheck('books-api-check-1', {
   alertChannels: [],
   degradedResponseTime: 10000,
   maxResponseTime: 20000,
+  tags: ['someServiceName'],
   request: {
     url: 'https://danube-web.shop/api/books',
     method: 'GET',
