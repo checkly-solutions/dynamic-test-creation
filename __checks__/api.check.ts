@@ -1,8 +1,9 @@
 import { ApiCheck, AssertionBuilder } from 'checkly/constructs'
+import { emailChannel } from './alert.check'
 
 new ApiCheck('books-api-check-1', {
   name: 'Books API',
-  alertChannels: [],
+  alertChannels: [emailChannel],
   degradedResponseTime: 10000,
   maxResponseTime: 20000,
   tags: ['someServiceName'],

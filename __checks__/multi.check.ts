@@ -1,7 +1,9 @@
 import { MultiStepCheck, RetryStrategyBuilder } from 'checkly/constructs';
+import { emailChannel } from './alert.check'
 
 new MultiStepCheck('authentication-crud', {
   name: 'Multi Setup & Teardown Scripts',
+  alertChannels: [emailChannel],
   activated: false,
   muted: false,
   shouldFail: false,
