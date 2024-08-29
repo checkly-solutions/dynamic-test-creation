@@ -2,8 +2,6 @@
 import { test, expect } from '@playwright/test';
 import { defaults } from '../defaults';
 
-console.log(defaults.bank);
-
 test.describe(`Bank: ${defaults.bank}`, () => {
   defaults.services.forEach((service) => {
     test(`Visit ${service.serviceName}`, async ({ page }) => {
