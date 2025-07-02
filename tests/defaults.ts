@@ -9,5 +9,9 @@ export const defaults = {
       serviceName: 'service3',
       serviceUrl: 'https://www.linkedin.com',
     },
+    {
+      serviceName: 'service4',
+      serviceUrl: 'https://www.linkedin.com',
+    },
   ],
 };
